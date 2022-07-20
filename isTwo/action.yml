@@ -7,6 +7,11 @@ inputs:
     description: "a value that should be 'two'"
     required: true
 
+  is:
+    default: 'two'
+    description: "the value to compare against"
+    required: false
+
 runs:
   using: node16
   main: dist/index.js

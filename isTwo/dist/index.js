@@ -2144,11 +2144,12 @@ const core = __nccwpck_require__(186);
 
 async function run() {
     const value = core.getInput('value');
+    const targetValue = core.getInput('is') ?? 'two';
 
-    if (value.toLowerCase() !== 'two') {
-        core.setFailed(`value: '${value}' is not 'two'`);
+    if (value.toLowerCase() !== targetValue.toLowerCase()) {
+        core.setFailed(`value: '${value}' is not '${targetValue}'`);
     } else {
-        core.info(`value: ${value} is 'two'`);
+        core.info(`value: ${value} is '${targetValue}'`);
     }
 }
 
