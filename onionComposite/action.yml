@@ -7,3 +7,4 @@ runs:
 
   steps:
     - uses: ./composite
+      id: nested
