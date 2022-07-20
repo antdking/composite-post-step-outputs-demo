@@ -1,0 +1,12 @@
+name: Test isTwo
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./composite

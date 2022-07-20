@@ -1,0 +1,18 @@
+{
+  "name": "istwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build --license license.txt index.js",
+    "ncc": "ncc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@vercel/ncc": "^0.34.0"
+  }
+}

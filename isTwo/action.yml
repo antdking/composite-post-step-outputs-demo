@@ -1,0 +1,13 @@
+name: isTwo
+description: Is Two
+
+inputs:
+  value:
+    default: ''
+    description: "a value that should be 'two'"
+    required: true
+
+runs:
+  using: node16
+  main: dist/index.js
+  post: dist/index.js
