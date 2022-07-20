@@ -10,12 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./composite
-      - uses: ./composite
-      - uses: ./composite
 
   nested-testing:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./composite
       - uses: ./onionComposite

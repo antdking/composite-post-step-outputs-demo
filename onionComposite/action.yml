@@ -1,4 +1,4 @@
-name: Nested Composite Demo
+name: NestedComposite Demo
 description: Demo trying to use outputs in post-steps
 
 runs:
@@ -6,16 +6,4 @@ runs:
   
 
   steps:
-    - name: Set Value to 'Three'
-      id: setter
-      shell: bash
-      run:
-        echo "::set-output name=some-val::three"
-  
-    - name: Assert value is 'Three'
-      uses: ./isTwo
-      with:
-        value: '${{ steps.setter.outputs.some-val }}'
-        is: 'three'
-    
     - uses: ./composite

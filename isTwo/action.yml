@@ -7,7 +7,7 @@ inputs:
     description: "a value that should be 'two'"
     required: true
 
-  is:
+  target:
     default: 'two'
     description: "the value to compare against"
     required: false
