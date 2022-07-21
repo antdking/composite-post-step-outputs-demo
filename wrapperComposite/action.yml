@@ -1,0 +1,12 @@
+name: wrapperComposite
+description: |
+  wrapperComposite wraps the innerComposite.
+  This will cause innerComposite to forget its Steps context in the post-job phase.
+
+runs:
+  using: composite
+  
+
+  steps:
+    - uses: ./innerComposite
+      id: innerComposite

@@ -1,0 +1,13 @@
+name: isFoo
+description: Check if 'value' is set to the literal, 'foo'
+
+inputs:
+  value:
+    default: ''
+    description: "a value that should be 'foo'"
+    required: true
+
+runs:
+  using: node16
+  main: dist/index.js
+  post: dist/index.js
